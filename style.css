@@ -556,3 +556,373 @@ footer p {
         margin: 10px 0;
     }
 }
+
+
+
+/* =========================================
+   BRAIN EXPLORER PAGE
+   ========================================= */
+
+/* Brain page header */
+
+body:has(main section:nth-child(2) details) header {
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(123, 92, 255, 0.25),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 80% 30%,
+            rgba(0, 220, 255, 0.18),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #070b20,
+            #111542,
+            #071d35
+        );
+}
+
+/* Remove standalone horizontal lines */
+
+body > hr {
+    display: none;
+}
+
+header hr {
+    display: none;
+}
+
+/* =========================================
+   BRAIN PAGE MAIN SECTIONS
+   ========================================= */
+
+main {
+    width: 92%;
+    max-width: 1100px;
+    margin: 45px auto;
+}
+
+main > section {
+    position: relative;
+
+    margin-bottom: 25px;
+    padding: 30px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(20, 29, 67, 0.96),
+            rgba(11, 20, 45, 0.96)
+        );
+
+    border: 1px solid rgba(117, 105, 214, 0.22);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.25);
+
+    overflow: hidden;
+
+    transition: 0.3s ease;
+}
+
+main > section:hover {
+    transform: translateY(-3px);
+
+    border-color: rgba(91, 220, 255, 0.35);
+
+    box-shadow:
+        0 18px 45px rgba(0, 0, 0, 0.32);
+}
+
+/* =========================================
+   SECTION HEADINGS
+   ========================================= */
+
+main > section h2 {
+    margin-top: 0;
+
+    color: #a99cff;
+
+    font-size: 28px;
+}
+
+main > section p {
+    color: #b8c1df;
+}
+
+/* =========================================
+   INTRODUCTION SECTION
+   ========================================= */
+
+main > section:first-child {
+    padding: 38px;
+
+    border-left: 5px solid #7b68ee;
+
+    background:
+        radial-gradient(
+            circle at 90% 10%,
+            rgba(0, 210, 255, 0.10),
+            transparent 30%
+        ),
+        linear-gradient(
+            145deg,
+            #141c43,
+            #0b152f
+        );
+}
+
+main > section:first-child h2 {
+    font-size: 32px;
+    color: #b4a9ff;
+}
+
+/* =========================================
+   BRAIN REGION CARDS
+   ========================================= */
+
+main > section:nth-child(2),
+main > section:nth-child(3),
+main > section:nth-child(4),
+main > section:nth-child(5) {
+    border-left: 4px solid #6352d9;
+}
+
+/* Different accent for each region */
+
+main > section:nth-child(2) {
+    border-left-color: #8b72ff;
+}
+
+main > section:nth-child(3) {
+    border-left-color: #00c9d8;
+}
+
+main > section:nth-child(4) {
+    border-left-color: #b76cff;
+}
+
+main > section:nth-child(5) {
+    border-left-color: #4edcff;
+}
+
+main > section:nth-child(2) h2,
+main > section:nth-child(3) h2,
+main > section:nth-child(4) h2,
+main > section:nth-child(5) h2 {
+    color: #72ddff;
+}
+
+/* =========================================
+   DETAILS
+   ========================================= */
+
+details {
+    margin-top: 20px;
+
+    border: 1px solid rgba(117, 105, 214, 0.25);
+
+    border-radius: 12px;
+
+    background: rgba(5, 12, 31, 0.65);
+
+    overflow: hidden;
+}
+
+summary {
+    padding: 15px 18px;
+
+    color: #a99cff;
+
+    cursor: pointer;
+
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+summary:hover {
+    color: #62e0ff;
+
+    background: rgba(105, 85, 232, 0.12);
+}
+
+details[open] summary {
+    color: #62e0ff;
+
+    background: rgba(105, 85, 232, 0.10);
+
+    border-bottom: 1px solid rgba(117, 105, 214, 0.2);
+}
+
+details p {
+    padding: 5px 20px 18px;
+}
+
+/* =========================================
+   BRAIN SUMMARY TABLE
+   ========================================= */
+
+main > section:last-child {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 20px;
+
+    background: rgba(5, 12, 31, 0.65);
+
+    border: 1px solid rgba(117, 105, 214, 0.25);
+
+    border-radius: 12px;
+
+    overflow: hidden;
+}
+
+thead {
+    background:
+        linear-gradient(
+            135deg,
+            #5140b8,
+            #087f99
+        );
+}
+
+th {
+    padding: 16px;
+
+    color: white;
+
+    text-align: left;
+
+    font-size: 16px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+td {
+    padding: 16px;
+
+    color: #c1c9e5;
+
+    border-bottom: 1px solid rgba(117, 105, 214, 0.15);
+
+    vertical-align: top;
+}
+
+tbody tr {
+    transition: 0.25s ease;
+}
+
+tbody tr:hover {
+    background: rgba(104, 84, 230, 0.12);
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* First column */
+
+td:first-child {
+    color: #70ddff;
+
+    font-weight: 700;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    padding: 30px 20px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #05091b,
+            #0b1b35
+        );
+
+    border-top: 1px solid rgba(124, 104, 255, 0.20);
+}
+
+footer p {
+    margin-bottom: 10px;
+
+    color: #8995ba;
+}
+
+footer a {
+    color: #69ddff;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+footer a:hover {
+    color: #a99cff;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    main {
+        width: 94%;
+        margin: 30px auto;
+    }
+
+    main > section {
+        padding: 23px;
+    }
+
+    main > section:first-child {
+        padding: 25px;
+    }
+
+    main > section h2 {
+        font-size: 24px;
+    }
+
+    th,
+    td {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    main {
+        width: 95%;
+    }
+
+    main > section {
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+
+        font-size: 13px;
+    }
+}
