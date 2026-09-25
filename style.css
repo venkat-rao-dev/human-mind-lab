@@ -1,0 +1,431 @@
+/* =========================================
+   HUMAN MIND LAB - HOME PAGE
+   index.html
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.7;
+    color: #202638;
+    background: #f4f7fb;
+}
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+header {
+    padding: 45px 20px 30px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(
+        135deg,
+        #332275,
+        #5b4bb7,
+        #078b8b
+    );
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    margin: 0 0 10px;
+    font-size: 42px;
+    letter-spacing: 1px;
+}
+
+header p {
+    max-width: 750px;
+    margin: 0 auto 25px;
+    font-size: 17px;
+    color: #f1f3ff;
+}
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+nav a {
+    padding: 9px 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.10);
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: white;
+    color: #4d3ca0;
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   HORIZONTAL LINES
+   ========================================= */
+
+body > hr {
+    display: none;
+}
+
+main hr {
+    border: 0;
+    border-top: 1px solid #e0e4ec;
+    margin: 30px 0;
+}
+
+/* =========================================
+   MAIN CONTAINER
+   ========================================= */
+
+main {
+    width: 92%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+/* =========================================
+   GENERAL SECTIONS
+   ========================================= */
+
+main > section {
+    margin-bottom: 25px;
+    padding: 30px;
+    background: white;
+    border: 1px solid #e2e6ee;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(30, 40, 70, 0.07);
+}
+
+section h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #40338c;
+    font-size: 28px;
+}
+
+section p {
+    color: #667085;
+}
+
+/* =========================================
+   WELCOME SECTION
+   ========================================= */
+
+main > section:first-child {
+    padding: 40px;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(91, 75, 183, 0.10),
+            rgba(0, 166, 166, 0.08)
+        ),
+        white;
+    border-left: 6px solid #5b4bb7;
+}
+
+main > section:first-child h2 {
+    font-size: 32px;
+}
+
+/* =========================================
+   EXPLORE THE MIND
+   ========================================= */
+
+main > section:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+main > section:nth-of-type(2) > h2 {
+    grid-column: 1 / -1;
+}
+
+/* Individual cards */
+
+article {
+    padding: 25px;
+    border: 1px solid #e2e6ee;
+    border-radius: 15px;
+    background: linear-gradient(
+        145deg,
+        #ffffff,
+        #f8f7ff
+    );
+    transition: 0.3s;
+}
+
+article:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 18px 35px rgba(50, 45, 100, 0.13);
+    border-color: #bcb2ed;
+}
+
+article h3 {
+    margin-top: 0;
+    color: #5b4bb7;
+    font-size: 21px;
+}
+
+article p {
+    color: #667085;
+}
+
+article a {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 9px 15px;
+    color: white;
+    background: linear-gradient(
+        135deg,
+        #5b4bb7,
+        #08a6a6
+    );
+    border-radius: 9px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+article a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(91, 75, 183, 0.25);
+}
+
+/* =========================================
+   QUICK BRAIN FACTS
+   ========================================= */
+
+main > section:nth-of-type(3) ul {
+    padding-left: 25px;
+}
+
+main > section:nth-of-type(3) li {
+    margin: 12px 0;
+    padding-left: 5px;
+    color: #667085;
+}
+
+main > section:nth-of-type(3) li::marker {
+    color: #5b4bb7;
+}
+
+/* =========================================
+   PROGRESS SECTION
+   ========================================= */
+
+progress,
+meter {
+    width: 100%;
+    max-width: 600px;
+    height: 25px;
+    display: block;
+    margin: 10px 0 25px;
+}
+
+progress {
+    accent-color: #5b4bb7;
+}
+
+meter {
+    accent-color: #08a6a6;
+}
+
+/* =========================================
+   DID YOU KNOW
+   ========================================= */
+
+details {
+    margin: 15px 0;
+    border: 1px solid #e0e4ec;
+    border-radius: 12px;
+    background: #fafbff;
+    overflow: hidden;
+}
+
+summary {
+    padding: 16px 18px;
+    cursor: pointer;
+    color: #40338c;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+summary:hover {
+    background: #f0eeff;
+}
+
+details[open] summary {
+    background: #f0eeff;
+    border-bottom: 1px solid #e0e4ec;
+}
+
+details p {
+    padding: 5px 20px 18px;
+}
+
+/* =========================================
+   CALL TO ACTION
+   ========================================= */
+
+main > section:last-child {
+    text-align: center;
+    padding: 40px 25px;
+    background: linear-gradient(
+        135deg,
+        #40338c,
+        #08a6a6
+    );
+}
+
+main > section:last-child h2 {
+    color: white;
+}
+
+main > section:last-child p {
+    color: #f0f4ff;
+}
+
+main > section:last-child a {
+    display: inline-block;
+    margin: 7px;
+    padding: 12px 20px;
+    color: #40338c;
+    background: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 800;
+    transition: 0.3s;
+}
+
+main > section:last-child a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    padding: 28px 20px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(
+        135deg,
+        #30236f,
+        #087f83
+    );
+}
+
+footer p {
+    margin: 0;
+    color: #f2f4ff;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav a {
+        text-align: center;
+    }
+
+    main {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    main > section {
+        padding: 23px;
+    }
+
+    main > section:nth-of-type(2) {
+        grid-template-columns: 1fr;
+    }
+
+    main > section:nth-of-type(2) > h2 {
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 500px) {
+
+    header {
+        padding: 35px 15px 25px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    main > section {
+        padding: 18px;
+        border-radius: 14px;
+    }
+
+    article {
+        padding: 20px;
+    }
+
+    main > section:last-child a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+/* =========================================
+   HERO IMAGE
+   ========================================= */
+
+.hero-image {
+    margin-bottom: 25px;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 18px;
+    background: #071a3d;
+    box-shadow: 0 10px 30px rgba(30, 40, 70, 0.12);
+}
+
+.hero-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 18px;
+}
