@@ -926,3 +926,275 @@ footer a:hover {
         font-size: 13px;
     }
 }
+
+
+
+/* =========================================
+   MEMORY LAB PAGE
+   ========================================= */
+
+/* Hide standalone horizontal lines */
+header hr,
+body > hr {
+    display: none;
+}
+
+/* Memory page sections */
+main > section {
+    position: relative;
+    margin-bottom: 25px;
+    padding: 30px;
+    background: linear-gradient(
+        145deg,
+        rgba(20, 29, 67, 0.96),
+        rgba(11, 20, 45, 0.96)
+    );
+    border: 1px solid rgba(117, 105, 214, 0.22);
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+    transition: 0.3s ease;
+}
+
+main > section:hover {
+    transform: translateY(-3px);
+    border-color: rgba(91, 220, 255, 0.35);
+}
+
+main > section h2 {
+    margin-top: 0;
+    color: #a99cff;
+    font-size: 28px;
+}
+
+main > section p {
+    color: #b8c1df;
+}
+
+/* Memory experiment introduction */
+main > section:first-child {
+    padding: 38px;
+    border-left: 5px solid #7b68ee;
+    background:
+        radial-gradient(
+            circle at 90% 10%,
+            rgba(0, 210, 255, 0.10),
+            transparent 30%
+        ),
+        linear-gradient(
+            145deg,
+            #141c43,
+            #0b152f
+        );
+}
+
+main > section:first-child h2 {
+    font-size: 32px;
+    color: #b4a9ff;
+}
+
+/* Word List */
+main > section:nth-child(2) {
+    border-left: 4px solid #00c9d8;
+}
+
+main > section:nth-child(2) ol {
+    max-width: 600px;
+    margin: 20px 0 0;
+    padding: 0;
+    list-style-position: inside;
+}
+
+main > section:nth-child(2) li {
+    margin: 10px 0;
+    padding: 12px 15px;
+    color: #d2d9f2;
+    background: rgba(5, 12, 31, 0.65);
+    border: 1px solid rgba(117, 105, 214, 0.18);
+    border-radius: 10px;
+    transition: 0.25s ease;
+}
+
+main > section:nth-child(2) li:hover {
+    color: #ffffff;
+    background: rgba(105, 85, 232, 0.14);
+    border-color: rgba(98, 224, 255, 0.35);
+    transform: translateX(5px);
+}
+
+main > section:nth-child(2) li::marker {
+    color: #62ddff;
+    font-weight: bold;
+}
+
+/* Result section */
+main > section:nth-child(3) {
+    border-left: 4px solid #8b72ff;
+}
+
+main > section:nth-child(3) label {
+    display: block;
+    margin-bottom: 10px;
+    color: #d4dbf3;
+    font-weight: 600;
+}
+
+input[type="number"] {
+    width: 180px;
+    padding: 12px 14px;
+    color: #ffffff;
+    background: #080f29;
+    border: 1px solid rgba(117, 105, 214, 0.45);
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+}
+
+input[type="number"]:focus {
+    border-color: #62ddff;
+    box-shadow: 0 0 15px rgba(98, 221, 255, 0.15);
+}
+
+/* Submit button */
+button[type="submit"] {
+    padding: 12px 22px;
+    color: white;
+    background: linear-gradient(
+        135deg,
+        #6955e8,
+        #00a9c7
+    );
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 190, 220, 0.25);
+}
+
+/* Memory concepts */
+main > section:nth-child(4) {
+    border-left: 4px solid #b76cff;
+}
+
+/* Details */
+details {
+    margin: 15px 0;
+    border: 1px solid rgba(117, 105, 214, 0.25);
+    border-radius: 12px;
+    background: rgba(5, 12, 31, 0.65);
+    overflow: hidden;
+}
+
+summary {
+    padding: 16px 18px;
+    color: #a99cff;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+summary:hover {
+    color: #62e0ff;
+    background: rgba(105, 85, 232, 0.12);
+}
+
+details[open] summary {
+    color: #62e0ff;
+    background: rgba(105, 85, 232, 0.10);
+    border-bottom: 1px solid rgba(117, 105, 214, 0.20);
+}
+
+details p {
+    padding: 5px 20px 18px;
+}
+
+/* HTML Note */
+main > section:last-child {
+    border-left: 4px solid #4edcff;
+    background:
+        linear-gradient(
+            145deg,
+            rgba(18, 36, 65, 0.96),
+            rgba(10, 24, 47, 0.96)
+        );
+}
+
+main > section:last-child h2 {
+    color: #65ddff;
+}
+
+/* Footer */
+footer {
+    padding: 30px 20px;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #05091b,
+        #0b1b35
+    );
+    border-top: 1px solid rgba(124, 104, 255, 0.20);
+}
+
+footer p {
+    margin-bottom: 10px;
+    color: #8995ba;
+}
+
+footer a {
+    color: #69ddff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+footer a:hover {
+    color: #a99cff;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+
+    main {
+        width: 94%;
+        margin: 30px auto;
+    }
+
+    main > section {
+        padding: 23px;
+    }
+
+    main > section:first-child {
+        padding: 25px;
+    }
+
+    main > section h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    main {
+        width: 95%;
+    }
+
+    main > section {
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    input[type="number"] {
+        width: 100%;
+        max-width: 180px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        max-width: 220px;
+    }
+}
