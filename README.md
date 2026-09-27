@@ -1,10 +1,10 @@
 # 🧠 Human Mind Lab
 
-Human Mind Lab is a multi-page educational website developed using **HTML5**. The project explores different aspects of the human mind, including the brain, memory, focus, perception, and learning.
+Human Mind Lab is a multi-page educational website developed using **HTML5 and CSS3**. The project explores different aspects of the human mind, including the brain, memory, focus, and perception, while demonstrating modern webpage styling and responsive design.
 
 ## 📌 Project Description
 
-The purpose of this project is to demonstrate the use of HTML5 concepts by creating a structured, user-friendly, multi-page website.
+The purpose of this project is to demonstrate practical knowledge of **HTML5 and CSS3** by creating a structured, user-friendly, multi-page website.
 
 The project focuses on:
 
@@ -12,13 +12,14 @@ The project focuses on:
 * Memory and learning
 * Focus and attention
 * Perception and senses
-* Basic HTML learning
 * Interactive HTML elements
-* User feedback forms
+* Forms and user input
+* CSS styling and responsive design
 
 ## 🛠️ Technologies Used
 
 * HTML5
+* CSS3
 * Git
 * GitHub
 * GitHub Pages
@@ -27,7 +28,7 @@ The project focuses on:
 
 ### 🏠 Home
 
-Introduction to the Human Mind Lab and navigation to the different sections.
+Introduction to the Human Mind Lab and navigation to the different sections of the website.
 
 ### 🧠 Brain Explorer
 
@@ -35,7 +36,7 @@ Provides information about different parts of the human brain and their commonly
 
 ### 🧩 Memory Lab
 
-Explores memory concepts and includes a simple observation activity.
+Explores memory concepts and includes a simple memory activity.
 
 ### 🎯 Focus Lab
 
@@ -49,13 +50,9 @@ Explains how the brain interprets information received through the senses.
 
 Contains questions related to the topics covered in the website.
 
-### 📚 HTML Learning Lab
-
-Demonstrates the HTML elements and concepts used to build the project.
-
 ### 💬 Feedback
 
-Provides a form for users to submit feedback.
+Provides a form for users to submit feedback about their experience.
 
 ## 💡 HTML5 Concepts Used
 
@@ -76,6 +73,29 @@ This project demonstrates several HTML5 concepts, including:
 * Articles and sections
 * Header and footer
 * Accessibility basics
+* Multi-page website structure
+
+## 🎨 CSS Concepts Used
+
+The project also demonstrates several CSS concepts, including:
+
+* CSS selectors
+* Colors
+* Backgrounds
+* Linear gradients
+* Font styling
+* Box model
+* Margin and padding
+* Borders
+* Border radius
+* Flexbox
+* CSS Grid
+* Hover effects
+* Transitions
+* Box shadows
+* Form styling
+* Responsive design
+* Media queries
 
 ## 📁 Project Structure
 
@@ -88,32 +108,48 @@ Human-Mind-Lab/
 ├── focus.html
 ├── perception.html
 ├── quiz.html
-├── learning.html
 ├── feedback.html
+├── style.css
+├── human-mind-hero.png
 └── README.md
 ```
 
 ## 🚀 How to Run the Project
 
-1. Download or clone the repository.
+1. Clone or download the repository.
 2. Open the project folder.
 3. Open `index.html` in a web browser.
 
-The project can also be viewed online using GitHub Pages.
+For local development, the project can also be opened using **Visual Studio Code Live Server**.
+
+The project is deployed online using **GitHub Pages**.
+
+## 🌐 Live Project
+
+GitHub Pages:
+
+https://venkat-rao-dev.github.io/human-mind-lab/
+
+## 📦 GitHub Repository
+
+https://github.com/venkat-rao-dev/human-mind-lab
 
 ## 🎯 Project Objective
 
-The main objective of this project is to gain practical experience with HTML5 and understand how multiple web pages can be structured and connected to create a complete website.
+The main objective of this project is to gain practical experience with **HTML5 and CSS3** and understand how multiple web pages can be structured, styled, connected, and deployed as a complete static website.
 
 ## 📖 Learning Outcomes
 
 Through this project, I learned:
 
 * How to create an HTML document
-* How to structure a webpage using semantic HTML
+* How to structure webpages using semantic HTML
 * How to create navigation between multiple pages
 * How to create tables and forms
 * How to use HTML5 interactive elements
+* How to style webpages using CSS
+* How to create responsive layouts
+* How to use CSS Flexbox and Grid
 * How to organize a multi-page website
 * How to upload and manage a project using GitHub
 * How to deploy a static website using GitHub Pages
