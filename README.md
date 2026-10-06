@@ -110,7 +110,7 @@ Human-Mind-Lab/
 ├── quiz.html
 ├── feedback.html
 ├── style.css
-├── human-mind-hero.png
+├── human-mind-hero.jpg
 └── README.md
 ```
 
