@@ -9,6 +9,8 @@
           content="width=device-width, initial-scale=1.0">
 
     <title>Memory Lab | Human Mind Lab</title>
+    <meta name="description" content="Try a simple memory experiment and learn about short-term and long-term memory.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%A7%A0%3C/text%3E%3C/svg%3E">
     <link rel="stylesheet" href="style.css"> 
 
 </head>
@@ -33,7 +35,7 @@
 
             <a href="index.html">Home</a> |
             <a href="brain.html">Brain Explorer</a> |
-            <a href="memory.html">Memory Lab</a> |
+            <a href="memory.html" aria-current="page">Memory Lab</a> |
             <a href="focus.html">Focus Lab</a> |
             <a href="perception.html">Perception Lab</a> |
             <a href="quiz.html">Brain Quiz</a> |
@@ -55,8 +57,9 @@
 
             <p>
                 Read the following words for approximately
-                30 seconds. Then cover the list and try to
-                remember as many as possible.
+                30 seconds. The list fades away when the time is up,
+                so try to remember as many words as you can.
+                Refresh the page to try again.
             </p>
 
         </section>
@@ -66,7 +69,7 @@
 
             <h2>Word List</h2>
 
-            <ol>
+            <ol class="word-list">
 
                 <li>Apple</li>
                 <li>Mountain</li>
@@ -166,13 +169,12 @@
 
         <section>
 
-            <h2>Important HTML Note</h2>
+            <h2>Tips to Remember More</h2>
 
             <p>
-                This experiment demonstrates HTML form elements.
-                HTML alone cannot automatically calculate the
-                user's memory score. JavaScript would normally
-                be used for that functionality.
+                Try grouping words into small chunks, linking them
+                into a short story, and testing yourself again after
+                a break. Getting enough sleep also supports memory.
             </p>
 
         </section>
@@ -185,13 +187,13 @@
 
     <footer>
 
-        <p>
-            &copy; 2026 Human Mind Lab
-        </p>
-
         <a href="index.html">
             ← Back to Home
         </a>
+
+        <p>
+            &copy; 2026 Human Mind Lab
+        </p>
 
     </footer>
 
