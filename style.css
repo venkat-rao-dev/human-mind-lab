@@ -1,8 +1,3 @@
-/* =========================================
-   HUMAN MIND LAB
-   MODERN FUTURISTIC THEME
-   index.html
-   ========================================= */
 
 * {
     box-sizing: border-box;
@@ -2159,3 +2154,48 @@ footer a:hover {
          margin: 5px 0;
      }
  }
+
+
+/* =========================================
+   ADDITIONS: current page, memory timer, focus
+   ========================================= */
+nav a[aria-current="page"] {
+    color: #ffffff;
+    font-weight: 700;
+    border-bottom: 2px solid #7b5cff;
+}
+
+/* Memory Lab: word list fades out after 30 seconds (CSS only) */
+.word-list {
+    animation: hideWords 1s linear 30s forwards;
+}
+
+@keyframes hideWords {
+    to { opacity: 0; visibility: hidden; }
+}
+
+a:focus-visible, button:focus-visible, input:focus-visible,
+select:focus-visible, textarea:focus-visible, summary:focus-visible {
+    outline: 3px solid #00dcff;
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+}
+
+/* Fix: the home-page 2-column grid leaked onto the third section of other pages */
+main:not(:has(.hero-image)) > section:nth-of-type(3) {
+    display: block;
+}
+
+/* Quiz: give every question the same left accent (first and last keep their colors) */
+main form fieldset {
+    border-left: 4px solid #6352d9;
+}
+
+/* Footer: Back to Home link sits above the copyright line */
+footer a {
+    display: inline-block;
+    margin-bottom: 12px;
+}
