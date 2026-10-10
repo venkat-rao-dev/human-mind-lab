@@ -11,14 +11,20 @@
     <title>Brain Quiz | Human Mind Lab</title>
     <meta name="description" content="Test what you know about the brain, the senses and memory with this short quiz.">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%A7%A0%3C/text%3E%3C/svg%3E">
+    <meta name="theme-color" content="#071126">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Brain Quiz | Human Mind Lab">
+    <meta property="og:description" content="Test what you know about the brain, the senses and memory with this short quiz.">
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 
 <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
 
-    <header>
+
+    <header id="top">
 
         <h1>
             <span class="page-icon">📝</span> 
@@ -31,27 +37,29 @@
 
         <hr>
 
-        <nav>
 
-            <a href="index.html">Home</a> |
-            <a href="brain.html">Brain Explorer</a> |
-            <a href="memory.html">Memory Lab</a> |
-            <a href="focus.html">Focus Lab</a> |
-            <a href="perception.html">Perception Lab</a> |
-            <a href="quiz.html" aria-current="page">Brain Quiz</a> |
+    </header>
+
+    <!-- ================= NAVIGATION (sticky) ================= -->
+    <nav>
+
+            <a href="index.html">Home</a>
+            <a href="brain.html">Brain Explorer</a>
+            <a href="memory.html">Memory Lab</a>
+            <a href="focus.html">Focus Lab</a>
+            <a href="perception.html">Perception Lab</a>
+            <a href="quiz.html" aria-current="page">Brain Quiz</a>
             <a href="feedback.html">Feedback</a>
 
         </nav>
-
-    </header>
 
 
     <hr>
 
 
-    <main>
+    <main id="main">
 
-        <form>
+        <form class="quiz-form">
 
             <fieldset>
 
@@ -82,7 +90,7 @@
                     <input
                         type="radio"
                         name="question1"
-                        value="occipital">
+                        value="occipital" data-correct>
 
                     Occipital Lobe
 
@@ -100,6 +108,9 @@
                     Temporal Lobe
 
                 </label>
+
+            <p class="feedback ok">&#10004; Correct!</p>
+                <p class="feedback no">&#10008; Not quite. Open the answer key below to check.</p>
 
             </fieldset>
 
@@ -135,7 +146,7 @@
                     <input
                         type="radio"
                         name="question2"
-                        value="hearing">
+                        value="hearing" data-correct>
 
                     Hearing
 
@@ -153,6 +164,9 @@
                     Touch
 
                 </label>
+
+            <p class="feedback ok">&#10004; Correct!</p>
+                <p class="feedback no">&#10008; Not quite. Open the answer key below to check.</p>
 
             </fieldset>
 
@@ -175,7 +189,7 @@
                     <input
                         type="radio"
                         name="question3"
-                        value="cerebellum">
+                        value="cerebellum" data-correct>
 
                     Cerebellum
 
@@ -207,6 +221,9 @@
 
                 </label>
 
+            <p class="feedback ok">&#10004; Correct!</p>
+                <p class="feedback no">&#10008; Not quite. Open the answer key below to check.</p>
+
             </fieldset>
 
 
@@ -228,7 +245,7 @@
                     <input
                         type="radio"
                         name="question4"
-                        value="frontal">
+                        value="frontal" data-correct>
 
                     Frontal Lobe
 
@@ -262,6 +279,9 @@
 
                 <br>
 
+            <p class="feedback ok">&#10004; Correct!</p>
+                <p class="feedback no">&#10008; Not quite. Open the answer key below to check.</p>
+
             </fieldset>
 
 
@@ -283,7 +303,7 @@
                     <input
                         type="radio"
                         name="question5"
-                        value="learning">
+                        value="learning" data-correct>
 
                     Learning and remembering
 
@@ -317,19 +337,18 @@
 
                 <br>
 
+            <p class="feedback ok">&#10004; Correct!</p>
+                <p class="feedback no">&#10008; Not quite. Open the answer key below to check.</p>
+
             </fieldset>
 
 
             <br>
 
 
-            <button type="submit">
-                Submit Quiz
-            </button>
+            <p class="quiz-score">Your score: <strong class="score-number"></strong> / 5</p>
 
-            <button type="reset">
-                Reset
-            </button>
+            <button type="reset">Try Again</button>
 
         </form>
 
@@ -371,6 +390,8 @@
         </p>
 
     </footer>
+
+    <a href="#top" class="back-to-top" aria-label="Back to top">&uarr;</a>
 
 </body>
 
