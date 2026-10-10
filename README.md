@@ -1,107 +1,40 @@
-# 🧠 Human Mind Lab
+# Human Mind Lab
 
-Human Mind Lab is a multi-page educational website developed using **HTML5 and CSS3**. The project explores different aspects of the human mind, including the brain, memory, focus, and perception, while demonstrating modern webpage styling and responsive design.
+Human Mind Lab is a multi-page educational website about the human brain, memory, focus and perception. It is built with **HTML5 and CSS3 only** (no JavaScript) as a fresher training project.
 
-## 📌 Project Description
+## Pages
 
-The purpose of this project is to demonstrate practical knowledge of **HTML5 and CSS3** by creating a structured, user-friendly, multi-page website.
+| Page | File | What it has |
+|------|------|-------------|
+| Home | `index.html` | Hero section and a guided tour of the labs |
+| Brain Explorer | `brain.html` | Interactive brain map, 6 brain regions, summary table, further reading |
+| Memory Lab | `memory.html` | Word-list test that fades after 30 seconds, memory tips |
+| Focus Lab | `focus.html` | Focus factors, tips, breathing exercise |
+| Perception Lab | `perception.html` | Five senses table, two optical illusions |
+| Brain Quiz | `quiz.html` | 5 questions with live feedback and a score |
+| Feedback | `feedback.html` | Feedback form with validation |
+| Not Found | `404.html` | Custom error page |
 
-The project focuses on:
+## Features
 
-* Human brain and its functions
-* Memory and learning
-* Focus and attention
-* Perception and senses
-* Interactive HTML elements
-* Forms and user input
-* CSS styling and responsive design
+- **Sticky navigation bar** that stays at the top while scrolling, highlights the current page and shows a reading-progress line. On phones it becomes one swipeable row.
+- **Interactive brain map** (inline SVG): hover, tap or tab to a region to see what it does.
+- **Quiz with live feedback** and a CSS-only score, built with `:checked`, `:has()` and CSS counters.
+- **Memory test timer** and **breathing exercise** built with CSS `@keyframes`.
+- **Optical illusions** drawn with inline SVG.
+- **Responsive layout** for desktop, tablet and mobile.
+- **Accessibility:** skip link, keyboard focus outlines, labels on all form fields, `aria-current` on the active page, reduced-motion support.
+- **Back-to-top button** that appears after scrolling.
+- **CSS variables** in `:root` for the main colors.
 
-## 🛠️ Technologies Used
+## Concepts practiced
 
-* HTML5
-* CSS3
-* Git
-* GitHub
-* GitHub Pages
+Semantic HTML5, forms and validation, `details`/`summary`, tables, `meter` and `progress`, inline SVG, CSS variables, Flexbox and Grid, `position: sticky`, animations, `:has()`, CSS counters, media queries.
 
-## 📄 Website Pages
-
-### 🏠 Home
-
-Introduction to the Human Mind Lab and navigation to the different sections of the website.
-
-### 🧠 Brain Explorer
-
-Provides information about different parts of the human brain and their commonly associated functions.
-
-### 🧩 Memory Lab
-
-Explores memory concepts and includes a simple memory activity.
-
-### 🎯 Focus Lab
-
-Explores attention, concentration, and factors related to focus.
-
-### 👁️ Perception Lab
-
-Explains how the brain interprets information received through the senses.
-
-### 📝 Brain Quiz
-
-Contains questions related to the topics covered in the website.
-
-### 💬 Feedback
-
-Provides a form for users to submit feedback about their experience.
-
-## 💡 HTML5 Concepts Used
-
-This project demonstrates several HTML5 concepts, including:
-
-* Semantic HTML
-* Headings and paragraphs
-* Hyperlinks
-* Navigation
-* Ordered and unordered lists
-* Tables
-* Forms
-* Input fields
-* Fieldsets and legends
-* Details and summary
-* Progress element
-* Meter element
-* Articles and sections
-* Header and footer
-* Accessibility basics
-* Multi-page website structure
-
-## 🎨 CSS Concepts Used
-
-The project also demonstrates several CSS concepts, including:
-
-* CSS selectors
-* Colors
-* Backgrounds
-* Linear gradients
-* Font styling
-* Box model
-* Margin and padding
-* Borders
-* Border radius
-* Flexbox
-* CSS Grid
-* Hover effects
-* Transitions
-* Box shadows
-* Form styling
-* Responsive design
-* Media queries
-
-## 📁 Project Structure
+## Project structure
 
 ```text
-Human-Mind-Lab/
-│
+human-mind-lab/
 ├── index.html
 ├── brain.html
 ├── memory.html
@@ -109,59 +42,21 @@ Human-Mind-Lab/
 ├── perception.html
 ├── quiz.html
 ├── feedback.html
+├── 404.html
 ├── style.css
 ├── human-mind-hero.jpg
 └── README.md
 ```
 
-## 🚀 How to Run the Project
+## How to run
 
-1. Clone or download the repository.
-2. Open the project folder.
-3. Open `index.html` in a web browser.
+Open `index.html` in a modern browser (Chrome, Edge, Firefox or Safari), or use VS Code Live Server.
 
-For local development, the project can also be opened using **Visual Studio Code Live Server**.
+## Notes
 
-The project is deployed online using **GitHub Pages**.
+- Some features (`:has()`, scroll-linked animations) need a recent browser. Older browsers still show a working page, only without those effects.
+- The feedback form does not send data because there is no backend. Connect a form service (for example Formspree) by adding its URL as the form `action`.
 
-## 🌐 Live Project
+## Author
 
-GitHub Pages:
-
-https://venkat-rao-dev.github.io/human-mind-lab/
-
-## 📦 GitHub Repository
-
-https://github.com/venkat-rao-dev/human-mind-lab
-
-## 🎯 Project Objective
-
-The main objective of this project is to gain practical experience with **HTML5 and CSS3** and understand how multiple web pages can be structured, styled, connected, and deployed as a complete static website.
-
-## 📖 Learning Outcomes
-
-Through this project, I learned:
-
-* How to create an HTML document
-* How to structure webpages using semantic HTML
-* How to create navigation between multiple pages
-* How to create tables and forms
-* How to use HTML5 interactive elements
-* How to style webpages using CSS
-* How to create responsive layouts
-* How to use CSS Flexbox and Grid
-* How to organize a multi-page website
-* How to upload and manage a project using GitHub
-* How to deploy a static website using GitHub Pages
-
-## 📌 Project Status
-
-**Completed**
-
-## 👨‍💻 Author
-
-**Kancheti Venkata Rao**
-
-## 📅 Year
-
-**2026**
+Kancheti Venkata Rao - 2026
