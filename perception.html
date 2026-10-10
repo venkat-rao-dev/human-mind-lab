@@ -11,14 +11,20 @@
     <title>Perception Lab | Human Mind Lab</title>
     <meta name="description" content="Discover how the brain interprets information from the senses.">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%A7%A0%3C/text%3E%3C/svg%3E">
+    <meta name="theme-color" content="#071126">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Perception Lab | Human Mind Lab">
+    <meta property="og:description" content="Discover how the brain interprets information from the senses.">
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 
 <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
 
-    <header>
+
+    <header id="top">
 
         <h1>
           <span class="page-icon">👁️</span>
@@ -31,25 +37,27 @@
 
         <hr>
 
-        <nav>
 
-            <a href="index.html">Home</a> |
-            <a href="brain.html">Brain Explorer</a> |
-            <a href="memory.html">Memory Lab</a> |
-            <a href="focus.html">Focus Lab</a> |
-            <a href="perception.html" aria-current="page">Perception Lab</a> |
-            <a href="quiz.html">Brain Quiz</a> |
+    </header>
+
+    <!-- ================= NAVIGATION (sticky) ================= -->
+    <nav>
+
+            <a href="index.html">Home</a>
+            <a href="brain.html">Brain Explorer</a>
+            <a href="memory.html">Memory Lab</a>
+            <a href="focus.html">Focus Lab</a>
+            <a href="perception.html" aria-current="page">Perception Lab</a>
+            <a href="quiz.html">Brain Quiz</a>
             <a href="feedback.html">Feedback</a>
 
         </nav>
-
-    </header>
 
 
     <hr>
 
 
-    <main>
+    <main id="main">
 
         <section>
 
@@ -182,6 +190,52 @@
         </section>
 
 
+        <section class="illusions">
+
+            <h2>Optical Illusions</h2>
+
+            <p>
+                Your brain does not simply copy what the eyes see; it
+                interprets it. Try these two classic illusions.
+            </p>
+
+            <figure>
+                <svg viewBox="0 0 300 120" role="img" aria-label="Two horizontal lines with different arrow ends">
+                    <g class="ml">
+                        <line x1="60" y1="35" x2="240" y2="35"/>
+                        <path d="M75 22 L60 35 L75 48 M225 22 L240 35 L225 48"/>
+                        <line x1="60" y1="85" x2="240" y2="85"/>
+                        <path d="M45 72 L60 85 L45 98 M255 72 L240 85 L255 98"/>
+                    </g>
+                </svg>
+                <figcaption>Which horizontal line looks longer, the top or the bottom?</figcaption>
+                <details>
+                    <summary>Reveal the answer</summary>
+                    <p>
+                        Both lines are exactly the same length. This is the
+                        M&uuml;ller-Lyer illusion: the arrow ends change how
+                        long the lines appear.
+                    </p>
+                </details>
+            </figure>
+
+            <figure>
+                <svg viewBox="0 0 320 160" role="img" aria-label="Two circles surrounded by larger or smaller circles">
+                    <g class="eb"><circle class="ring" cx="135.0" cy="80.0" r="26"/><circle class="ring" cx="110.0" cy="123.3" r="26"/><circle class="ring" cx="60.0" cy="123.3" r="26"/><circle class="ring" cx="35.0" cy="80.0" r="26"/><circle class="ring" cx="60.0" cy="36.7" r="26"/><circle class="ring" cx="110.0" cy="36.7" r="26"/><circle class="center" cx="85" cy="80" r="16"/><circle class="ring" cx="267.0" cy="80.0" r="10"/><circle class="ring" cx="251.0" cy="107.7" r="10"/><circle class="ring" cx="219.0" cy="107.7" r="10"/><circle class="ring" cx="203.0" cy="80.0" r="10"/><circle class="ring" cx="219.0" cy="52.3" r="10"/><circle class="ring" cx="251.0" cy="52.3" r="10"/><circle class="center" cx="235" cy="80" r="16"/></g>
+                </svg>
+                <figcaption>Which of the two center circles looks bigger?</figcaption>
+                <details>
+                    <summary>Reveal the answer</summary>
+                    <p>
+                        The two center circles are the same size. This is the
+                        Ebbinghaus illusion: the size of the surrounding
+                        circles affects how big the middle one seems.
+                    </p>
+                </details>
+            </figure>
+
+        </section>
+
         <section>
 
             <h2>Think About It</h2>
@@ -219,6 +273,8 @@
         </p>
 
     </footer>
+
+    <a href="#top" class="back-to-top" aria-label="Back to top">&uarr;</a>
 
 </body>
 
