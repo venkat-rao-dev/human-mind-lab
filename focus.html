@@ -11,14 +11,20 @@
     <title>Focus Lab | Human Mind Lab</title>
     <meta name="description" content="Explore attention and concentration, and learn simple tips to stay focused.">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%A7%A0%3C/text%3E%3C/svg%3E">
+    <meta name="theme-color" content="#071126">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Focus Lab | Human Mind Lab">
+    <meta property="og:description" content="Explore attention and concentration, and learn simple tips to stay focused.">
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 
 <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
 
-    <header>
+
+    <header id="top">
 
         <h1>
           <span class="page-icon">🎯</span>
@@ -31,25 +37,27 @@
 
         <hr>
 
-        <nav>
 
-            <a href="index.html">Home</a> |
-            <a href="brain.html">Brain Explorer</a> |
-            <a href="memory.html">Memory Lab</a> |
-            <a href="focus.html" aria-current="page">Focus Lab</a> |
-            <a href="perception.html">Perception Lab</a> |
-            <a href="quiz.html">Brain Quiz</a> |
+    </header>
+
+    <!-- ================= NAVIGATION (sticky) ================= -->
+    <nav>
+
+            <a href="index.html">Home</a>
+            <a href="brain.html">Brain Explorer</a>
+            <a href="memory.html">Memory Lab</a>
+            <a href="focus.html" aria-current="page">Focus Lab</a>
+            <a href="perception.html">Perception Lab</a>
+            <a href="quiz.html">Brain Quiz</a>
             <a href="feedback.html">Feedback</a>
 
         </nav>
-
-    </header>
 
 
     <hr>
 
 
-    <main>
+    <main id="main">
 
         <section>
 
@@ -134,6 +142,24 @@
         </section>
 
 
+        <section class="breathing">
+
+            <h2>Breathing Exercise</h2>
+
+            <p>
+                Breathe in slowly as the circle grows and breathe out
+                as it shrinks. Try it for one minute to reset your attention.
+            </p>
+
+            <div class="breath-wrap">
+                <div class="breath-circle">
+                    <span class="breath-in">Breathe in</span>
+                    <span class="breath-out">Breathe out</span>
+                </div>
+            </div>
+
+        </section>
+
         <section>
 
             <h2>Example Focus Level</h2>
@@ -178,6 +204,8 @@
         </p>
 
     </footer>
+
+    <a href="#top" class="back-to-top" aria-label="Back to top">&uarr;</a>
 
 </body>
 
