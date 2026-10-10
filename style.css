@@ -1,3 +1,19 @@
+/* =========================================
+   THEME VARIABLES (change colors here)
+   ========================================= */
+:root {
+    --bg: #071126;
+    --cyan: #62ddff;
+    --teal: #00c9d8;
+    --violet: #a99cff;
+    --violet-2: #7b68ee;
+    --purple: #6955e8;
+    --magenta: #b76cff;
+    --text: #e8ecff;
+    --text-soft: #b8c1df;
+    --text-muted: #8995ba;
+    --card-border: rgba(135, 121, 255, 0.35);
+}
 
 * {
     box-sizing: border-box;
@@ -181,13 +197,13 @@ section h2 {
     margin-top: 0;
     margin-bottom: 15px;
 
-    color: #a99cff;
+    color: var(--violet);
 
     font-size: 29px;
 }
 
 section p {
-    color: #b8c1df;
+    color: var(--text-soft);
 }
 
 /* =========================================
@@ -273,13 +289,13 @@ article:hover {
 article h3 {
     margin-top: 0;
 
-    color: #65ddff;
+    color: var(--cyan);
 
     font-size: 21px;
 }
 
 article p {
-    color: #b8c1df;
+    color: var(--text-soft);
 }
 
 article a {
@@ -293,7 +309,7 @@ article a {
 
     background: linear-gradient(
         135deg,
-        #6955e8,
+        var(--purple),
         #00a9c7
     );
 
@@ -324,7 +340,7 @@ main > section:nth-of-type(4) ul {
 main > section:nth-of-type(4) li {
     margin: 12px 0;
 
-    color: #b8c1df;
+    color: var(--text-soft);
 }
 
 main > section:nth-of-type(4) li::marker {
@@ -345,10 +361,6 @@ meter {
     display: block;
 
     margin: 10px 0 25px;
-}
-
-progress {
-    accent-color: #7b68ee;
 }
 
 meter {
@@ -384,21 +396,17 @@ summary {
 }
 
 summary:hover {
-    color: #62ddff;
+    color: var(--cyan);
 
     background: rgba(100, 80, 230, 0.10);
 }
 
 details[open] summary {
-    color: #62ddff;
+    color: var(--cyan);
 
     background: rgba(100, 80, 230, 0.12);
 
     border-bottom: 1px solid rgba(124, 104, 255, 0.20);
-}
-
-details p {
-    padding: 5px 20px 18px;
 }
 
 /* =========================================
@@ -463,7 +471,7 @@ main > section:last-child a:hover {
 
     background: linear-gradient(
         135deg,
-        #6955e8,
+        var(--purple),
         #00bcd4
     );
 
@@ -497,7 +505,7 @@ footer {
 footer p {
     margin: 0;
 
-    color: #8995ba;
+    color: var(--text-muted);
 }
 
 /* =========================================
@@ -569,8 +577,6 @@ footer p {
         margin: 10px 0;
     }
 }
-
-
 
 /* =========================================
    BRAIN EXPLORER PAGE
@@ -656,44 +662,9 @@ main > section:hover {
    SECTION HEADINGS
    ========================================= */
 
-main > section h2 {
-    margin-top: 0;
-
-    color: #a99cff;
-
-    font-size: 28px;
-}
-
-main > section p {
-    color: #b8c1df;
-}
-
 /* =========================================
    INTRODUCTION SECTION
    ========================================= */
-
-main > section:first-child {
-    padding: 38px;
-
-    border-left: 5px solid #7b68ee;
-
-    background:
-        radial-gradient(
-            circle at 90% 10%,
-            rgba(0, 210, 255, 0.10),
-            transparent 30%
-        ),
-        linear-gradient(
-            145deg,
-            #141c43,
-            #0b152f
-        );
-}
-
-main > section:first-child h2 {
-    font-size: 32px;
-    color: #b4a9ff;
-}
 
 /* =========================================
    BRAIN REGION CARDS
@@ -713,15 +684,15 @@ main > section:nth-child(2) {
 }
 
 main > section:nth-child(3) {
-    border-left-color: #00c9d8;
+    border-left-color: var(--teal);
 }
 
 main > section:nth-child(4) {
-    border-left-color: #b76cff;
+    border-left-color: var(--magenta);
 }
 
 main > section:nth-child(5) {
-    border-left-color: #4edcff;
+    border-left-color: var(--cyan);
 }
 
 main > section:nth-child(2) h2,
@@ -735,34 +706,16 @@ main > section:nth-child(5) h2 {
    DETAILS
    ========================================= */
 
-details {
-    margin-top: 20px;
-
-    border: 1px solid rgba(117, 105, 214, 0.25);
-
-    border-radius: 12px;
-
-    background: rgba(5, 12, 31, 0.65);
-
-    overflow: hidden;
-}
-
 summary {
     padding: 15px 18px;
 
-    color: #a99cff;
+    color: var(--violet);
 
     cursor: pointer;
 
     font-weight: 700;
 
     transition: 0.3s ease;
-}
-
-summary:hover {
-    color: #62e0ff;
-
-    background: rgba(105, 85, 232, 0.12);
 }
 
 details[open] summary {
@@ -773,53 +726,12 @@ details[open] summary {
     border-bottom: 1px solid rgba(117, 105, 214, 0.2);
 }
 
-details p {
-    padding: 5px 20px 18px;
-}
-
 /* =========================================
    BRAIN SUMMARY TABLE
    ========================================= */
 
 main > section:last-child {
     overflow-x: auto;
-}
-
-table {
-    width: 100%;
-
-    border-collapse: collapse;
-
-    margin-top: 20px;
-
-    background: rgba(5, 12, 31, 0.65);
-
-    border: 1px solid rgba(117, 105, 214, 0.25);
-
-    border-radius: 12px;
-
-    overflow: hidden;
-}
-
-thead {
-    background:
-        linear-gradient(
-            135deg,
-            #5140b8,
-            #087f99
-        );
-}
-
-th {
-    padding: 16px;
-
-    color: white;
-
-    text-align: left;
-
-    font-size: 16px;
-
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 td {
@@ -832,64 +744,11 @@ td {
     vertical-align: top;
 }
 
-tbody tr {
-    transition: 0.25s ease;
-}
-
-tbody tr:hover {
-    background: rgba(104, 84, 230, 0.12);
-}
-
-tbody tr:last-child td {
-    border-bottom: none;
-}
-
 /* First column */
-
-td:first-child {
-    color: #70ddff;
-
-    font-weight: 700;
-}
 
 /* =========================================
    FOOTER
    ========================================= */
-
-footer {
-    padding: 30px 20px;
-
-    text-align: center;
-
-    background:
-        linear-gradient(
-            135deg,
-            #05091b,
-            #0b1b35
-        );
-
-    border-top: 1px solid rgba(124, 104, 255, 0.20);
-}
-
-footer p {
-    margin-bottom: 10px;
-
-    color: #8995ba;
-}
-
-footer a {
-    color: #69ddff;
-
-    text-decoration: none;
-
-    font-weight: 700;
-
-    transition: 0.3s ease;
-}
-
-footer a:hover {
-    color: #a99cff;
-}
 
 /* =========================================
    RESPONSIVE DESIGN
@@ -940,75 +799,17 @@ footer a:hover {
     }
 }
 
-
-
 /* =========================================
    MEMORY LAB PAGE
    ========================================= */
 
 /* Hide standalone horizontal lines */
-header hr,
-body > hr {
-    display: none;
-}
 
 /* Memory page sections */
-main > section {
-    position: relative;
-    margin-bottom: 25px;
-    padding: 30px;
-    background: linear-gradient(
-        145deg,
-        rgba(20, 29, 67, 0.96),
-        rgba(11, 20, 45, 0.96)
-    );
-    border: 1px solid rgba(117, 105, 214, 0.22);
-    border-radius: 20px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
-    transition: 0.3s ease;
-}
-
-main > section:hover {
-    transform: translateY(-3px);
-    border-color: rgba(91, 220, 255, 0.35);
-}
-
-main > section h2 {
-    margin-top: 0;
-    color: #a99cff;
-    font-size: 28px;
-}
-
-main > section p {
-    color: #b8c1df;
-}
 
 /* Memory experiment introduction */
-main > section:first-child {
-    padding: 38px;
-    border-left: 5px solid #7b68ee;
-    background:
-        radial-gradient(
-            circle at 90% 10%,
-            rgba(0, 210, 255, 0.10),
-            transparent 30%
-        ),
-        linear-gradient(
-            145deg,
-            #141c43,
-            #0b152f
-        );
-}
-
-main > section:first-child h2 {
-    font-size: 32px;
-    color: #b4a9ff;
-}
 
 /* Word List */
-main > section:nth-child(2) {
-    border-left: 4px solid #00c9d8;
-}
 
 main > section:nth-child(2) ol {
     max-width: 600px;
@@ -1027,19 +828,13 @@ main > section:nth-child(2) li {
     transition: 0.25s ease;
 }
 
-main > section:nth-child(2) li:hover {
-    color: #ffffff;
-    background: rgba(105, 85, 232, 0.14);
-    border-color: rgba(98, 224, 255, 0.35);
-    transform: translateX(5px);
-}
-
 main > section:nth-child(2) li::marker {
-    color: #62ddff;
+    color: var(--cyan);
     font-weight: bold;
 }
 
 /* Result section */
+
 main > section:nth-child(3) {
     border-left: 4px solid #8b72ff;
 }
@@ -1063,17 +858,18 @@ input[type="number"] {
 }
 
 input[type="number"]:focus {
-    border-color: #62ddff;
+    border-color: var(--cyan);
     box-shadow: 0 0 15px rgba(98, 221, 255, 0.15);
 }
 
 /* Submit button */
+
 button[type="submit"] {
     padding: 12px 22px;
     color: white;
     background: linear-gradient(
         135deg,
-        #6955e8,
+        var(--purple),
         #00a9c7
     );
     border: none;
@@ -1090,45 +886,17 @@ button[type="submit"]:hover {
 }
 
 /* Memory concepts */
+
 main > section:nth-child(4) {
-    border-left: 4px solid #b76cff;
+    border-left: 4px solid var(--magenta);
 }
 
 /* Details */
-details {
-    margin: 15px 0;
-    border: 1px solid rgba(117, 105, 214, 0.25);
-    border-radius: 12px;
-    background: rgba(5, 12, 31, 0.65);
-    overflow: hidden;
-}
-
-summary {
-    padding: 16px 18px;
-    color: #a99cff;
-    cursor: pointer;
-    font-weight: 700;
-    transition: 0.3s ease;
-}
-
-summary:hover {
-    color: #62e0ff;
-    background: rgba(105, 85, 232, 0.12);
-}
-
-details[open] summary {
-    color: #62e0ff;
-    background: rgba(105, 85, 232, 0.10);
-    border-bottom: 1px solid rgba(117, 105, 214, 0.20);
-}
-
-details p {
-    padding: 5px 20px 18px;
-}
 
 /* HTML Note */
+
 main > section:last-child {
-    border-left: 4px solid #4edcff;
+    border-left: 4px solid var(--cyan);
     background:
         linear-gradient(
             145deg,
@@ -1138,38 +906,13 @@ main > section:last-child {
 }
 
 main > section:last-child h2 {
-    color: #65ddff;
+    color: var(--cyan);
 }
 
 /* Footer */
-footer {
-    padding: 30px 20px;
-    text-align: center;
-    background: linear-gradient(
-        135deg,
-        #05091b,
-        #0b1b35
-    );
-    border-top: 1px solid rgba(124, 104, 255, 0.20);
-}
-
-footer p {
-    margin-bottom: 10px;
-    color: #8995ba;
-}
-
-footer a {
-    color: #69ddff;
-    text-decoration: none;
-    font-weight: 700;
-    transition: 0.3s ease;
-}
-
-footer a:hover {
-    color: #a99cff;
-}
 
 /* Responsive */
+
 @media (max-width: 700px) {
 
     main {
@@ -1217,68 +960,12 @@ footer a:hover {
    ========================================= */
 
 /* Hide horizontal lines */
-header hr,
-body > hr {
-    display: none;
-}
 
 /* Main sections */
-main > section {
-    position: relative;
-    margin-bottom: 25px;
-    padding: 30px;
-    background: linear-gradient(
-        145deg,
-        rgba(20, 29, 67, 0.96),
-        rgba(11, 20, 45, 0.96)
-    );
-    border: 1px solid rgba(117, 105, 214, 0.22);
-    border-radius: 20px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
-    transition: 0.3s ease;
-}
-
-main > section:hover {
-    transform: translateY(-3px);
-    border-color: rgba(91, 220, 255, 0.35);
-}
-
-main > section h2 {
-    margin-top: 0;
-    color: #a99cff;
-    font-size: 28px;
-}
-
-main > section p {
-    color: #b8c1df;
-}
 
 /* Focus introduction */
-main > section:first-child {
-    padding: 38px;
-    border-left: 5px solid #7b68ee;
-    background:
-        radial-gradient(
-            circle at 90% 10%,
-            rgba(0, 210, 255, 0.10),
-            transparent 30%
-        ),
-        linear-gradient(
-            145deg,
-            #141c43,
-            #0b152f
-        );
-}
-
-main > section:first-child h2 {
-    font-size: 32px;
-    color: #b4a9ff;
-}
 
 /* Focus Factors */
-main > section:nth-child(2) {
-    border-left: 4px solid #00c9d8;
-}
 
 main > section:nth-child(2) ul {
     padding-left: 25px;
@@ -1303,15 +990,13 @@ main > section:nth-child(2) li:hover {
 }
 
 main > section:nth-child(2) li::marker {
-    color: #62ddff;
+    color: var(--cyan);
 }
 
 /* Focus Explorer */
-main > section:nth-child(3) {
-    border-left: 4px solid #b76cff;
-}
 
 /* Details */
+
 details {
     margin: 15px 0;
     border: 1px solid rgba(117, 105, 214, 0.25);
@@ -1320,39 +1005,14 @@ details {
     overflow: hidden;
 }
 
-summary {
-    padding: 16px 18px;
-    color: #a99cff;
-    cursor: pointer;
-    font-weight: 700;
-    transition: 0.3s ease;
-}
-
-summary:hover {
-    color: #62e0ff;
-    background: rgba(105, 85, 232, 0.12);
-}
-
-details[open] summary {
-    color: #62e0ff;
-    background: rgba(105, 85, 232, 0.10);
-    border-bottom: 1px solid rgba(117, 105, 214, 0.20);
-}
-
-details p {
-    padding: 5px 20px 18px;
-}
-
 /* Focus Level */
-main > section:nth-child(4) {
-    border-left: 4px solid #4edcff;
-}
 
 main > section:nth-child(4) h2 {
-    color: #65ddff;
+    color: var(--cyan);
 }
 
 /* Meter and Progress */
+
 meter,
 progress {
     display: block;
@@ -1363,42 +1023,17 @@ progress {
 }
 
 meter {
-    accent-color: #00c9d8;
+    accent-color: var(--teal);
 }
 
 progress {
-    accent-color: #7b68ee;
+    accent-color: var(--violet-2);
 }
 
 /* Footer */
-footer {
-    padding: 30px 20px;
-    text-align: center;
-    background: linear-gradient(
-        135deg,
-        #05091b,
-        #0b1b35
-    );
-    border-top: 1px solid rgba(124, 104, 255, 0.20);
-}
-
-footer p {
-    margin-bottom: 10px;
-    color: #8995ba;
-}
-
-footer a {
-    color: #69ddff;
-    text-decoration: none;
-    font-weight: 700;
-    transition: 0.3s ease;
-}
-
-footer a:hover {
-    color: #a99cff;
-}
 
 /* Responsive */
+
 @media (max-width: 700px) {
 
     main {
@@ -1436,18 +1071,14 @@ footer a:hover {
     }
 }
 
-
 /* =========================================
    PERCEPTION LAB PAGE
    ========================================= */
 
 /* Hide horizontal lines */
-header hr,
-body > hr {
-    display: none;
-}
 
 /* Main sections */
+
 main > section {
     position: relative;
     margin-bottom: 25px;
@@ -1470,18 +1101,15 @@ main > section:hover {
 
 main > section h2 {
     margin-top: 0;
-    color: #a99cff;
+    color: var(--violet);
     font-size: 28px;
 }
 
-main > section p {
-    color: #b8c1df;
-}
-
 /* Introduction */
+
 main > section:first-child {
     padding: 38px;
-    border-left: 5px solid #7b68ee;
+    border-left: 5px solid var(--violet-2);
     background:
         radial-gradient(
             circle at 90% 10%,
@@ -1501,11 +1129,13 @@ main > section:first-child h2 {
 }
 
 /* Five Senses */
+
 main > section:nth-child(2) {
-    border-left: 4px solid #00c9d8;
+    border-left: 4px solid var(--teal);
 }
 
 /* Table */
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -1556,8 +1186,9 @@ td:first-child {
 }
 
 /* Observation Challenge */
+
 main > section:nth-child(3) {
-    border-left: 4px solid #b76cff;
+    border-left: 4px solid var(--magenta);
 }
 
 main > section:nth-child(3) ol {
@@ -1583,16 +1214,18 @@ main > section:nth-child(3) li:hover {
 }
 
 main > section:nth-child(3) li::marker {
-    color: #62ddff;
+    color: var(--cyan);
     font-weight: bold;
 }
 
 /* Think About It */
+
 main > section:nth-child(4) {
-    border-left: 4px solid #4edcff;
+    border-left: 4px solid var(--cyan);
 }
 
 /* Details */
+
 details {
     margin-top: 20px;
     border: 1px solid rgba(117, 105, 214, 0.25);
@@ -1603,7 +1236,7 @@ details {
 
 summary {
     padding: 16px 18px;
-    color: #a99cff;
+    color: var(--violet);
     cursor: pointer;
     font-weight: 700;
     transition: 0.3s ease;
@@ -1625,34 +1258,9 @@ details p {
 }
 
 /* Footer */
-footer {
-    padding: 30px 20px;
-    text-align: center;
-    background: linear-gradient(
-        135deg,
-        #05091b,
-        #0b1b35
-    );
-    border-top: 1px solid rgba(124, 104, 255, 0.20);
-}
-
-footer p {
-    margin-bottom: 10px;
-    color: #8995ba;
-}
-
-footer a {
-    color: #69ddff;
-    text-decoration: none;
-    font-weight: 700;
-    transition: 0.3s ease;
-}
-
-footer a:hover {
-    color: #a99cff;
-}
 
 /* Responsive */
+
 @media (max-width: 700px) {
 
     main {
@@ -1697,23 +1305,20 @@ footer a:hover {
     }
 }
 
-
 /* =========================================
    BRAIN QUIZ PAGE
    ========================================= */
 
 /* Hide horizontal lines */
-header hr,
-body > hr {
-    display: none;
-}
 
 /* Quiz form */
+
 main > form {
     margin-bottom: 25px;
 }
 
 /* Question cards */
+
 fieldset {
     margin-bottom: 25px;
     padding: 28px;
@@ -1723,7 +1328,7 @@ fieldset {
         rgba(11, 20, 45, 0.96)
     );
     border: 1px solid rgba(117, 105, 214, 0.25);
-    border-left: 4px solid #7b68ee;
+    border-left: 4px solid var(--violet-2);
     border-radius: 18px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
     transition: 0.3s ease;
@@ -1735,12 +1340,13 @@ fieldset:hover {
 }
 
 /* Question title */
+
 legend {
     padding: 8px 16px;
     color: #ffffff;
     background: linear-gradient(
         135deg,
-        #6955e8,
+        var(--purple),
         #087f99
     );
     border-radius: 8px;
@@ -1755,6 +1361,7 @@ fieldset p {
 }
 
 /* Answer labels */
+
 fieldset label {
     display: block;
     margin: 10px 0;
@@ -1775,12 +1382,14 @@ fieldset label:hover {
 }
 
 /* Radio buttons */
+
 input[type="radio"] {
     margin-right: 10px;
-    accent-color: #62ddff;
+    accent-color: var(--cyan);
 }
 
 /* Buttons */
+
 button {
     margin-right: 10px;
     padding: 12px 22px;
@@ -1796,7 +1405,7 @@ button[type="submit"] {
     color: white;
     background: linear-gradient(
         135deg,
-        #6955e8,
+        var(--purple),
         #00a9c7
     );
 }
@@ -1807,12 +1416,8 @@ button[type="reset"] {
     border: 1px solid rgba(117, 105, 214, 0.35);
 }
 
-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(0, 190, 220, 0.20);
-}
-
 /* HTML limitation section */
+
 main > section {
     padding: 30px;
     background: linear-gradient(
@@ -1821,21 +1426,22 @@ main > section {
         rgba(10, 24, 47, 0.96)
     );
     border: 1px solid rgba(117, 105, 214, 0.22);
-    border-left: 4px solid #4edcff;
+    border-left: 4px solid var(--cyan);
     border-radius: 20px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
 }
 
 main > section h2 {
     margin-top: 0;
-    color: #65ddff;
+    color: var(--cyan);
 }
 
 main > section p {
-    color: #b8c1df;
+    color: var(--text-soft);
 }
 
 /* Footer */
+
 footer {
     padding: 30px 20px;
     text-align: center;
@@ -1847,22 +1453,14 @@ footer {
     border-top: 1px solid rgba(124, 104, 255, 0.20);
 }
 
-footer p {
-    margin-bottom: 10px;
-    color: #8995ba;
-}
-
 footer a {
     color: #69ddff;
     text-decoration: none;
     font-weight: 700;
 }
 
-footer a:hover {
-    color: #a99cff;
-}
-
 /* Responsive */
+
 @media (max-width: 700px) {
 
     main {
@@ -1896,27 +1494,28 @@ footer a:hover {
     }
 }
 
-
-
- /* =========================================
+/* =========================================
     FEEDBACK PAGE
     ========================================= */
 
- /* Hide horizontal lines */
- header hr,
+/* Hide horizontal lines */
+
+header hr,
  body > hr {
      display: none;
  }
 
- /* Main container */
- main {
+/* Main container */
+
+main {
      width: 92%;
      max-width: 900px;
      margin: 45px auto;
  }
 
- /* Feedback section */
- main > section {
+/* Feedback section */
+
+main > section {
      padding: 35px;
      background:
          linear-gradient(
@@ -1925,28 +1524,31 @@ footer a:hover {
              rgba(8, 17, 40, 0.97)
          );
      border: 1px solid rgba(117, 105, 214, 0.25);
-     border-left: 5px solid #7b68ee;
+     border-left: 5px solid var(--violet-2);
      border-radius: 20px;
      box-shadow:
          0 15px 40px rgba(0, 0, 0, 0.28),
          0 0 25px rgba(91, 76, 220, 0.08);
  }
 
- /* Heading */
- main > section h2 {
+/* Heading */
+
+main > section h2 {
      margin-top: 0;
      margin-bottom: 25px;
-     color: #a99cff;
+     color: var(--violet);
      font-size: 30px;
  }
 
- /* Form */
- form {
+/* Form */
+
+form {
      width: 100%;
  }
 
- /* Fieldsets */
- fieldset {
+/* Fieldsets */
+
+fieldset {
      margin: 0 0 25px;
      padding: 28px;
      background: rgba(5, 12, 31, 0.65);
@@ -1954,22 +1556,23 @@ footer a:hover {
      border-radius: 15px;
  }
 
- fieldset:first-child {
-     border-left: 4px solid #00c9d8;
+fieldset:first-child {
+     border-left: 4px solid var(--teal);
  }
 
- fieldset:last-of-type {
-     border-left: 4px solid #b76cff;
+fieldset:last-of-type {
+     border-left: 4px solid var(--magenta);
  }
 
- /* Legends */
- legend {
+/* Legends */
+
+legend {
      padding: 8px 16px;
      color: white;
      background:
          linear-gradient(
              135deg,
-             #6955e8,
+             var(--purple),
              #087f99
          );
      border-radius: 8px;
@@ -1977,16 +1580,18 @@ footer a:hover {
      font-size: 16px;
  }
 
- /* Labels */
- label {
+/* Labels */
+
+label {
      display: inline-block;
      margin-bottom: 8px;
      color: #d2d9f2;
      font-weight: 600;
  }
 
- /* Text input, email, select and textarea */
- input[type="text"],
+/* Text input, email, select and textarea */
+
+input[type="text"],
  input[type="email"],
  select,
  textarea {
@@ -2002,37 +1607,42 @@ footer a:hover {
      transition: 0.3s ease;
  }
 
- /* Input placeholder */
- input::placeholder,
+/* Input placeholder */
+
+input::placeholder,
  textarea::placeholder {
      color: #737fa5;
  }
 
- /* Select */
- select {
+/* Select */
+
+select {
      cursor: pointer;
  }
 
- /* Textarea */
- textarea {
+/* Textarea */
+
+textarea {
      min-height: 150px;
      resize: vertical;
      line-height: 1.6;
  }
 
- /* Focus effect */
- input[type="text"]:focus,
+/* Focus effect */
+
+input[type="text"]:focus,
  input[type="email"]:focus,
  select:focus,
  textarea:focus {
-     border-color: #62ddff;
+     border-color: var(--cyan);
      box-shadow:
          0 0 0 3px rgba(98, 221, 255, 0.08),
          0 0 18px rgba(98, 221, 255, 0.12);
  }
 
- /* Buttons */
- button {
+/* Buttons */
+
+button {
      margin-right: 10px;
      padding: 13px 24px;
      border-radius: 10px;
@@ -2042,50 +1652,56 @@ footer a:hover {
      transition: 0.3s ease;
  }
 
- /* Submit */
- button[type="submit"] {
+/* Submit */
+
+button[type="submit"] {
      color: white;
      background:
          linear-gradient(
              135deg,
-             #6955e8,
+             var(--purple),
              #00a9c7
          );
      border: none;
  }
 
- /* Reset */
- button[type="reset"] {
+/* Reset */
+
+button[type="reset"] {
      color: #dce3fa;
      background: rgba(255, 255, 255, 0.07);
      border: 1px solid rgba(117, 105, 214, 0.35);
  }
 
- /* Button hover */
- button:hover {
+/* Button hover */
+
+button:hover {
      transform: translateY(-3px);
      box-shadow:
          0 10px 25px rgba(0, 190, 220, 0.20);
  }
 
- button[type="reset"]:hover {
+button[type="reset"]:hover {
      color: white;
      background: rgba(105, 85, 232, 0.18);
      border-color: rgba(98, 221, 255, 0.35);
  }
 
- /* Required field indicator */
- input:required {
-     border-left: 3px solid #7b68ee;
+/* Required field indicator */
+
+input:required {
+     border-left: 3px solid var(--violet-2);
  }
 
- /* Valid input */
- input:valid {
+/* Valid input */
+
+input:valid {
      border-color: rgba(98, 221, 255, 0.35);
  }
 
- /* Footer */
- footer {
+/* Footer */
+
+footer {
      padding: 32px 20px;
      text-align: center;
      background:
@@ -2097,24 +1713,25 @@ footer a:hover {
      border-top: 1px solid rgba(124, 104, 255, 0.20);
  }
 
- footer p {
+footer p {
      margin-bottom: 10px;
-     color: #8995ba;
+     color: var(--text-muted);
  }
 
- footer a {
+footer a {
      color: #69ddff;
      text-decoration: none;
      font-weight: 700;
      transition: 0.3s ease;
  }
 
- footer a:hover {
-     color: #a99cff;
+footer a:hover {
+     color: var(--violet);
  }
 
- /* Responsive design */
- @media (max-width: 700px) {
+/* Responsive design */
+
+@media (max-width: 700px) {
 
      main {
          width: 94%;
@@ -2134,7 +1751,7 @@ footer a:hover {
      }
  }
 
- @media (max-width: 500px) {
+@media (max-width: 500px) {
 
      main {
          width: 95%;
@@ -2155,17 +1772,14 @@ footer a:hover {
      }
  }
 
-
 /* =========================================
    ADDITIONS: current page, memory timer, focus
    ========================================= */
-nav a[aria-current="page"] {
-    color: #ffffff;
-    font-weight: 700;
-    border-bottom: 2px solid #7b5cff;
-}
+
+
 
 /* Memory Lab: word list fades out after 30 seconds (CSS only) */
+
 .word-list {
     animation: hideWords 1s linear 30s forwards;
 }
@@ -2185,17 +1799,498 @@ select:focus-visible, textarea:focus-visible, summary:focus-visible {
 }
 
 /* Fix: the home-page 2-column grid leaked onto the third section of other pages */
+
 main:not(:has(.hero-image)) > section:nth-of-type(3) {
     display: block;
 }
 
 /* Quiz: give every question the same left accent (first and last keep their colors) */
+
 main form fieldset {
     border-left: 4px solid #6352d9;
 }
 
 /* Footer: Back to Home link sits above the copyright line */
+
 footer a {
     display: inline-block;
     margin-bottom: 12px;
+}
+
+/* =========================================
+   STICKY NAVIGATION
+   The <nav> now sits right after </header>, so it can
+   stick to the top of the screen while the page scrolls.
+   ========================================= */
+
+html {
+    scroll-padding-top: 80px;   /* keeps anchor links from hiding under the nav */
+}
+
+header {
+    padding-bottom: 28px;
+    border-bottom: none;
+    box-shadow: none;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    padding: 14px 20px;
+
+    background: rgba(8, 12, 36, 0.92);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border-top: 1px solid rgba(123, 92, 255, 0.25);
+    border-bottom: 1px solid rgba(123, 92, 255, 0.3);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* Phones and small tablets: one compact scrollable row instead of a tall stack */
+
+@media (max-width: 800px) {
+    nav {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-x: auto;
+        padding: 10px 12px;
+        gap: 8px;
+        scrollbar-width: none;
+    }
+
+    nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    nav a {
+        flex: 0 0 auto;
+        white-space: nowrap;
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+
+    nav a:hover {
+        transform: none;
+    }
+}
+
+
+
+
+/* =========================================
+   NAVIGATION POLISH
+   ========================================= */
+
+nav a[aria-current="page"] {
+    color: #ffffff;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--purple), #00a9c7);
+    border-color: transparent;
+    box-shadow: 0 4px 18px rgba(94, 76, 220, 0.45);
+}
+
+/* Small laptops / tablets: keep all 7 links on one row */
+@media (min-width: 801px) and (max-width: 1000px) {
+    nav { gap: 6px; padding: 12px 10px; }
+    nav a { padding: 7px 11px; font-size: 14px; }
+}
+
+/* Reading progress bar along the bottom of the sticky nav (modern browsers) */
+nav::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--purple), var(--cyan));
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+@supports (animation-timeline: scroll()) {
+    nav::after {
+        animation: navProgress linear both;
+        animation-timeline: scroll(root);
+    }
+
+    @keyframes navProgress {
+        to { transform: scaleX(1); }
+    }
+}
+
+/* =========================================
+   ACCESSIBILITY + BACK TO TOP
+   ========================================= */
+
+.skip-link {
+    position: absolute;
+    left: 12px;
+    top: -60px;
+    z-index: 3000;
+    padding: 10px 18px;
+    color: #071126;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 8px;
+    background: var(--cyan);
+    transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+    top: 12px;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 900;
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--purple), #00a9c7);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45);
+    transition: transform 0.25s ease;
+}
+
+.back-to-top:hover {
+    transform: translateY(-4px);
+}
+
+@supports (animation-timeline: scroll()) {
+    .back-to-top {
+        opacity: 0;
+        visibility: hidden;
+        animation: showTop linear both;
+        animation-timeline: scroll(root);
+        animation-range: 0 600px;
+    }
+
+    @keyframes showTop {
+        to { opacity: 1; visibility: visible; }
+    }
+}
+
+/* =========================================
+   QUIZ: live feedback + CSS-only score
+   ========================================= */
+
+.quiz-form {
+    counter-reset: score;
+}
+
+.quiz-form input[data-correct]:checked {
+    counter-increment: score;
+}
+
+.quiz-form .feedback {
+    display: none;
+    margin: 14px 0 0;
+    padding: 10px 16px;
+    font-weight: 600;
+    border-radius: 12px;
+}
+
+.quiz-form .feedback.ok {
+    color: #86f0b4;
+    background: rgba(46, 204, 113, 0.12);
+    border: 1px solid rgba(46, 204, 113, 0.5);
+}
+
+.quiz-form .feedback.no {
+    color: #ffa3a3;
+    background: rgba(255, 99, 99, 0.1);
+    border: 1px solid rgba(255, 99, 99, 0.45);
+}
+
+.quiz-form fieldset:has(input[data-correct]:checked) .feedback.ok,
+.quiz-form fieldset:has(input:not([data-correct]):checked) .feedback.no {
+    display: block;
+}
+
+.quiz-form label:has(input[data-correct]:checked) {
+    border-color: #2ecc71;
+    background: rgba(46, 204, 113, 0.12);
+}
+
+.quiz-form label:has(input:not([data-correct]):checked) {
+    border-color: #ff6b6b;
+    background: rgba(255, 99, 99, 0.1);
+}
+
+.quiz-score {
+    display: inline-block;
+    margin: 6px 14px 0 0;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 14px;
+    border: 1px solid var(--card-border);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.score-number::after {
+    content: counter(score);
+    color: var(--cyan);
+}
+
+/* =========================================
+   FOCUS LAB: breathing exercise
+   ========================================= */
+
+.breath-wrap {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 40px;
+}
+
+.breath-circle {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, var(--cyan), var(--purple));
+    box-shadow: 0 0 45px rgba(98, 221, 255, 0.35);
+    animation: breathe 8s ease-in-out infinite;
+}
+
+.breath-circle span {
+    position: absolute;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+}
+
+.breath-in  { animation: breathe-in-text 8s ease-in-out infinite; }
+.breath-out { animation: breathe-out-text 8s ease-in-out infinite; }
+
+@keyframes breathe {
+    0%, 100% { transform: scale(1); }
+    50%      { transform: scale(1.7); }
+}
+
+@keyframes breathe-in-text {
+    0%, 40%   { opacity: 1; }
+    50%, 100% { opacity: 0; }
+}
+
+@keyframes breathe-out-text {
+    0%, 50%   { opacity: 0; }
+    60%, 90%  { opacity: 1; }
+    100%      { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .breath-circle, .breath-in, .breath-out { animation: none; }
+    .breath-in { opacity: 1; }
+    .breath-out { display: none; }
+}
+
+/* =========================================
+   PERCEPTION LAB: optical illusions
+   ========================================= */
+
+.illusions figure {
+    margin: 26px 0;
+    padding: 22px;
+    text-align: center;
+    border-radius: 16px;
+    border: 1px solid var(--card-border);
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.illusions svg {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+}
+
+.illusions figcaption {
+    margin: 10px 0 14px;
+    font-weight: 600;
+    color: var(--text-soft);
+}
+
+.illusions .ml line,
+.illusions .ml path {
+    fill: none;
+    stroke: var(--cyan);
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.illusions .eb .ring   { fill: none; stroke: var(--violet); stroke-width: 3; }
+.illusions .eb .center { fill: var(--cyan); }
+
+/* =========================================
+   BRAIN EXPLORER: interactive map
+   ========================================= */
+
+.brain-map {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.brain-map svg {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+}
+
+.brain-map .region {
+    cursor: pointer;
+    outline: none;
+}
+
+.brain-map .region polygon,
+.brain-map .region ellipse,
+.brain-map .region path {
+    fill-opacity: 0.35;
+    stroke: rgba(255, 255, 255, 0.55);
+    stroke-width: 1.5;
+    transition: fill-opacity 0.25s ease;
+}
+
+.brain-map .region:hover polygon,
+.brain-map .region:hover ellipse,
+.brain-map .region:hover path,
+.brain-map .region:focus polygon,
+.brain-map .region:focus ellipse,
+.brain-map .region:focus path {
+    fill-opacity: 0.85;
+}
+
+.brain-map .region:focus-visible polygon,
+.brain-map .region:focus-visible ellipse,
+.brain-map .region:focus-visible path {
+    stroke: #fff;
+    stroke-width: 3;
+}
+
+.brain-map .r-frontal polygon    { fill: #62ddff; }
+.brain-map .r-parietal polygon   { fill: #b76cff; }
+.brain-map .r-temporal polygon   { fill: #4ade80; }
+.brain-map .r-occipital polygon  { fill: #fbbf24; }
+.brain-map .r-cerebellum ellipse { fill: #f472b6; }
+.brain-map .r-brainstem path     { fill: #a99cff; }
+
+.brain-map .outline {
+    fill: none;
+    stroke: rgba(255, 255, 255, 0.4);
+    stroke-width: 2.5;
+    pointer-events: none;
+}
+
+.brain-map text {
+    fill: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    text-anchor: middle;
+    pointer-events: none;
+    paint-order: stroke;
+    stroke: rgba(7, 17, 38, 0.85);
+    stroke-width: 3px;
+}
+
+.brain-map .r-cerebellum text { font-size: 11px; }
+.brain-map .r-brainstem text  { font-size: 12px; text-anchor: start; }
+
+.brain-map .map-info {
+    display: none;
+    margin: 6px 0 0;
+    padding: 12px 18px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--card-border);
+}
+
+.brain-map .info-default { display: block; }
+
+.brain-map:has(.region:hover) .info-default,
+.brain-map:has(.region:focus) .info-default {
+    display: none;
+}
+
+.brain-map:has(.r-frontal:hover) .info-frontal,
+.brain-map:has(.r-frontal:focus) .info-frontal,
+.brain-map:has(.r-parietal:hover) .info-parietal,
+.brain-map:has(.r-parietal:focus) .info-parietal,
+.brain-map:has(.r-temporal:hover) .info-temporal,
+.brain-map:has(.r-temporal:focus) .info-temporal,
+.brain-map:has(.r-occipital:hover) .info-occipital,
+.brain-map:has(.r-occipital:focus) .info-occipital,
+.brain-map:has(.r-cerebellum:hover) .info-cerebellum,
+.brain-map:has(.r-cerebellum:focus) .info-cerebellum,
+.brain-map:has(.r-brainstem:hover) .info-brainstem,
+.brain-map:has(.r-brainstem:focus) .info-brainstem {
+    display: block;
+}
+
+.sources {
+    margin: 22px 0 0;
+    font-size: 14px;
+    text-align: center;
+    color: var(--text-muted);
+}
+
+.sources a {
+    color: var(--cyan);
+}
+
+/* =========================================
+   404 PAGE
+   ========================================= */
+
+.not-found {
+    text-align: center;
+}
+
+.home-button {
+    display: inline-block;
+    padding: 12px 26px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, var(--purple), #00a9c7);
+}
+
+.sources a {
+    display: inline;
+    padding: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    color: var(--cyan);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.breath-wrap { padding-bottom: 60px; }
+
+@media (prefers-reduced-motion: reduce) {
+    .breath-circle .breath-in { opacity: 1; }
 }
