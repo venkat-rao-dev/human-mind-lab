@@ -11,14 +11,20 @@
     <title>Brain Explorer | Human Mind Lab</title>
      <meta name="description" content="Learn about the main regions of the human brain and the functions commonly associated with them.">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%A7%A0%3C/text%3E%3C/svg%3E">
+    <meta name="theme-color" content="#071126">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Brain Explorer | Human Mind Lab">
+    <meta property="og:description" content="Learn about the main regions of the human brain and the functions commonly associated with them.">
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 
 <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
 
-    <header>
+
+    <header id="top">
 
         <h1>
             <span class="page-icon">🧠</span> 
@@ -31,25 +37,27 @@
 
         <hr>
 
-        <nav>
 
-            <a href="index.html">Home</a> |
-            <a href="brain.html" aria-current="page">Brain Explorer</a> |
-            <a href="memory.html">Memory Lab</a> |
-            <a href="focus.html">Focus Lab</a> |
-            <a href="perception.html">Perception Lab</a> |
-            <a href="quiz.html">Brain Quiz</a> |
+    </header>
+
+    <!-- ================= NAVIGATION (sticky) ================= -->
+    <nav>
+
+            <a href="index.html">Home</a>
+            <a href="brain.html" aria-current="page">Brain Explorer</a>
+            <a href="memory.html">Memory Lab</a>
+            <a href="focus.html">Focus Lab</a>
+            <a href="perception.html">Perception Lab</a>
+            <a href="quiz.html">Brain Quiz</a>
             <a href="feedback.html">Feedback</a>
 
         </nav>
-
-    </header>
 
 
     <hr>
 
 
-    <main>
+    <main id="main">
 
         <section>
 
@@ -60,6 +68,32 @@
                 Different areas are associated with different
                 functions and work together as a network.
             </p>
+
+        
+            <div class="brain-map">
+
+                <svg viewBox="0 0 420 320" role="group" aria-label="Interactive brain map, side view">
+                    <defs>
+                        <clipPath id="brainShape"><ellipse cx="190" cy="125" rx="165" ry="105"/></clipPath>
+                    </defs>
+                    <g class="region r-brainstem" tabindex="0" aria-label="Brainstem"><path d="M218 215 L254 215 L262 296 L232 304 Z"/><text x="272" y="292">Brainstem</text></g>
+                    <g class="region r-frontal" tabindex="0" aria-label="Frontal"><polygon points="0,0 195,0 185,150 40,170 0,170" clip-path="url(#brainShape)"/><text x="95" y="85">Frontal</text></g>
+                    <g class="region r-parietal" tabindex="0" aria-label="Parietal"><polygon points="195,0 303,0 300,125 185,150" clip-path="url(#brainShape)"/><text x="248" y="62">Parietal</text></g>
+                    <g class="region r-occipital" tabindex="0" aria-label="Occipital"><polygon points="303,0 420,0 420,240 300,240 300,125" clip-path="url(#brainShape)"/><text x="350" y="120">Occipital</text></g>
+                    <g class="region r-temporal" tabindex="0" aria-label="Temporal"><polygon points="0,168 40,170 185,150 300,125 300,240 0,240" clip-path="url(#brainShape)"/><text x="150" y="195">Temporal</text></g>
+                    <ellipse class="outline" cx="190" cy="125" rx="165" ry="105"/>
+                    <g class="region r-cerebellum" tabindex="0" aria-label="Cerebellum"><ellipse cx="300" cy="240" rx="52" ry="26"/><text x="300" y="244">Cerebellum</text></g>
+                </svg>
+
+                <p class="map-info info-default">Hover over, tap or tab to a region to see what it does.</p>
+                <p class="map-info info-frontal"><strong>Frontal lobe:</strong> planning, decision-making and voluntary movement.</p>
+                <p class="map-info info-parietal"><strong>Parietal lobe:</strong> touch, body position and spatial awareness.</p>
+                <p class="map-info info-temporal"><strong>Temporal lobe:</strong> hearing, memory and language.</p>
+                <p class="map-info info-occipital"><strong>Occipital lobe:</strong> visual processing.</p>
+                <p class="map-info info-cerebellum"><strong>Cerebellum:</strong> balance and coordination.</p>
+                <p class="map-info info-brainstem"><strong>Brainstem:</strong> breathing, heart rate and alertness.</p>
+
+            </div>
 
         </section>
 
@@ -307,6 +341,13 @@
                 </tbody>
 
             </table>
+            <p class="sources">
+                Further reading:
+                <a href="https://www.ninds.nih.gov/" target="_blank" rel="noopener">NINDS (NIH)</a> &middot;
+                <a href="https://www.nimh.nih.gov/" target="_blank" rel="noopener">NIMH (NIH)</a> &middot;
+                <a href="https://www.nhs.uk/" target="_blank" rel="noopener">NHS</a>
+            </p>
+
 
         </section>
 
@@ -327,6 +368,8 @@
         </p>
 
     </footer>
+
+    <a href="#top" class="back-to-top" aria-label="Back to top">&uarr;</a>
 
 </body>
 
